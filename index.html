@@ -57,6 +57,10 @@ body{
     z-index:99;
 }
 
+#img{
+  transition: 1.0s;
+}
+
 .navbar-nav.navbar-center {
     position: absolute;
     left: 50%;
@@ -116,6 +120,7 @@ a:hover::before {
 #car-body{
     background-color:black;
     height:inherit;
+    width: 50vw;
 }
 
 #car-img{
@@ -190,6 +195,7 @@ a:hover::before {
   z-index: 5;
   transform: translateY(300px);
   padding:20px;
+  border:2px inset gray;
 }
 
 #img-one img{
@@ -209,6 +215,7 @@ a:hover::before {
   z-index: 5;
   transform: translateY(150px);
   padding:20px;
+  border:2px inset gray;
 }
 
 #img-two img{
@@ -216,9 +223,11 @@ a:hover::before {
   width:260px;
 }
 
-#img-two p{
-  height:100px;
-  font-size: large;
+#img-two button{
+    transform: translateX(60px);
+    height:80px;
+    width:150px;
+    font-size: x-large;
 }
 
 #img-three{
@@ -228,6 +237,7 @@ a:hover::before {
   z-index: 5;
   float:right;
   padding:20px;
+  border:2px inset gray;
 }
 
 #img-three img{
@@ -257,15 +267,15 @@ a:hover::before {
 }
 
 .item-container div figure{
-    max-width:300px;
-    max-height:300px;
+    width:300px;
+    height:300px;
     overflow:hidden;
 }
 
 .item-container div img{
     transform:scale(1);
-    max-width:300px;
-    max-height:300px;
+    width:300px;
+    height:300px;
     transition: .3s ease-in-out;
 }
 
@@ -369,20 +379,20 @@ a:hover::before {
 <body>
     <nav id="nav" class="navbar navbar-expand-lg " style="z-index:100;">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="logoheart.png"></a>
+          <a class="navbar-brand" href="#"><img  src="logoheart.png"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item active hover-underline-animation">
-                <a class="nav-link " aria-current="page" href="#">Home</a>
+                <a class="nav-link " aria-current="page" href="#">Advice</a>
               </li>
               <li class="nav-item active hover-underline-animation">
-                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Fun Fact</a>
               </li>
             </ul>
-            <div class="nav-item logo"><img src="Logoeros-removebg-preview.png"></div>
+            <div class="nav-item logo"><img id="img" src="Logoeros-removebg-preview.png"></div>
             <div class="btn-group dropstart">
                 <button class="btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="0,100">
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-person-hearts" viewBox="0 0 16 16">
@@ -454,7 +464,7 @@ a:hover::before {
           <diV class="flex row carousel-card">
                   <div class="car-caption">
                       <button type="button" class="thebigone btn btn-outline-secondary">Shop</button>
-              <img src="banner.jpg" id="car-img" class="d-flex w-100" alt="...">
+              <img src="Banner3.png" id="car-img" class="d-flex w-100" alt="...">
             </div>
           </diV>
         </div>
@@ -471,7 +481,7 @@ a:hover::before {
       </div>
       <div class="carousel-item">
         <diV class="flex row carousel-card">
-            <img src="Riblogo.png" id="car-img" class="d-flex w-50" alt="...">
+            <img src="Pinkhoodie.png" id="car-img" class="d-flex w-50" alt="...">
             <div id='car-body' class=' d-flex w-50' style="align-items:center; justify-content: center;">
                 <div class="car-caption"  data-animation="animated fadeInDown">
                     <p data-animation="animated fadeInDown">Shop New Summer Attire</p>
@@ -485,21 +495,21 @@ a:hover::before {
     
         <div class="img-box"  id="dvImage">
           <div id="img-one" data-aos="fade" data-aos-easing="linear" data-aos-delay="700"  data-aos-offset="300" data-aos-duration="1500" class="img-fluid">
-            <img src="Riblogo.png">
-            <p>skdnfsjfksdkjfkjsdkfiuwe vseonfkjwneijfnos vkjsdnkfjksdj f dwndofskj v sknofinosdv soejfow sjv skjfd</p>
+            <img src="Earings.png">
+            <p>Our earings come in a couple of different metals including, silver, platitium, and gold</p>
           </div>
           <div id="img-two" data-aos="fade" data-aos-easing="linear" data-aos-delay="500" data-aos-offset="300" data-aos-duration="1500" class="img-fluid">
-            <img src="Riblogo.png">
-            <p>skdnfsjfksdkjfkjsdkfiuwe vseonfkjwneijfnos vkjsdnkfjksdj f dwndofskj v sknofinosdv soejfow sjv skjfd</p>
+            <img src="beanie.png">
+            <button type="button" class="btn btn-outline-secondary">Shop</button>
           </div>
           <div id="img-three" data-aos="fade" data-aos-easing="linear" data-aos-delay="300" data-aos-offset="300"  data-aos-duration="1500" class="img-fluid">
-            <img src="Riblogo.png">
-            <p>skdnfsjfksdkjfkjsdkfiuwe vseonfkjwneijfnos vkjsdnkfjksdj f dwndofskj v sknofinosdv soejfow sjv skjfd</p>
+            <img src="Brooch.png">
+            <p>Our Collar Brooch come in a couple of different high quality metals including, silver, platitium, and gold</p>
           </div>
         </div>
       <div class="item-container">
         <div class="item-one">
-            <a href="_blank"><figure><img src="bag.png"></figure></a>
+            <a href="_blank"><figure><img src="Shirts.png"></figure></a>
         </div>
         <div class="item-two">
             <a href="_blank"><figure><img src="pins.png"></figure></a>
@@ -508,7 +518,7 @@ a:hover::before {
             <a href="_blank"><figure><img src="sweater.png"></figure></a>
         </div>
         <div class="item-four">
-            <a href="_blank"><figure><img src="black-floral-seamless-pattern-with-shadow_1284-42217.jpg"></figure></a>
+            <a href="_blank"><figure><img src="jacketf[1976].png"></figure></a>
         </div>
     </div>
     <div class="footer-dark">
